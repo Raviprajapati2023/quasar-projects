@@ -50,7 +50,7 @@
     <section v-else>
       <h3>You have finish the quiz !</h3>
       <p>Your score is {{ score }} / {{ questions.length }}</p>
-      <button @click="quizCompleted = false">Reset</button>
+      <button @click="resetQuiz">Reset</button>
     </section>
   </div>
 </template>
@@ -113,6 +113,14 @@ const nextQuestion = () => {
   } else {
     quizCompleted.value = true;
   }
+};
+
+const resetQuiz = () => {
+  questions.value.forEach((q) => {
+    q.selected = null;
+  });
+  currentQuestion.value = 0;
+  quizCompleted.value = false;
 };
 </script>
 <style scoped>
