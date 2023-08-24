@@ -41,11 +41,6 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    title: "Flip Card",
-    link: "/flip-card",
-    icon: "school",
-  },
-  {
     title: "Quiz App",
     link: "/quiz-app",
     icon: "school",
@@ -53,6 +48,21 @@ const linksList = [
   {
     title: "Todo App",
     link: "/todo-app",
+    icon: "school",
+  },
+  {
+    title: "Weight Tracker",
+    link: "/weight-tracker",
+    icon: "school",
+  },
+  {
+    title: "Finance Tracker",
+    link: "/finance-tracker",
+    icon: "school",
+  },
+  {
+    title: "Flip Card",
+    link: "/flip-card",
     icon: "school",
   },
 ];
