@@ -15,6 +15,26 @@ const routes = [
         path: "/weight-tracker",
         component: () => import("pages/WeightTracker.vue"),
       },
+      {
+        path: "/practice-page",
+        component: () => import("pages/PracticePage.vue"),
+      },
+      {
+        path: "/task-page",
+        component: () => import("pages/TaskPage.vue"),
+      },
+      {
+        path: "/image-uploader",
+        component: () => import("pages/ImageUploader.vue"),
+      },
+      {
+        path: "/carousel",
+        component: () => import("pages/CarouselPage.vue"),
+      },
+      {
+        path: "/grid-layout",
+        component: () => import("pages/GridLayout.vue"),
+      },
     ],
   },
 

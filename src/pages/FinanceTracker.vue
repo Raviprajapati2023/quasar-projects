@@ -50,27 +50,6 @@
         </div>
 
         <hr />
-
-        <!-- <div class="text-center my-4 p-2">
-          <div
-            class="relative inline-block h-44 w-44 rounded-full text-center border-8 border-blue-600 border-l-slate-100"
-          >
-            <span class="block text-xl font-bold text-blue-600 mt-12">
-              75%
-            </span>
-            <span
-              class="absolute text-lg font-semibold text-blue-600 left-1/2 transform -translate-x-1/2"
-            >
-              Saved
-            </span>
-          </div>
-        </div>
-
-        <div
-          class="cursor-pointer text-lg font-semibold bg-slate-100 p-2 my-2 text-center"
-        >
-          View Full Report
-        </div> -->
       </div>
     </section>
     <section>
@@ -148,15 +127,15 @@ const form = ref({
 });
 
 const addExpense = () => {
-  if (form.value.expenseName && form.value.amount) {
-    rows.value.push(form.value);
+  if (form.value.expenseName && form.value.amount > 0) {
+    rows.value.expense.push(form.value);
   }
   form.value = {};
 };
 const deleteExpense = (item) => {
-  const index = rows.value.indexOf(item);
+  const index = rows.value.expense.indexOf(item);
   if (index !== -1) {
-    rows.value.splice(index, 1);
+    rows.value.expense.splice(index, 1);
   }
 };
 const columns = ref([

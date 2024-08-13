@@ -11,7 +11,9 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Flip Card App </q-toolbar-title>
+        <q-toolbar-title class="capitalize">
+          {{ $route.fullPath.replace("/", "").replace("-", " ") }}
+        </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -63,6 +65,31 @@ const linksList = [
   {
     title: "Flip Card",
     link: "/flip-card",
+    icon: "school",
+  },
+  {
+    title: "Practice",
+    link: "/practice-page",
+    icon: "school",
+  },
+  {
+    title: "Task",
+    link: "/task-page",
+    icon: "school",
+  },
+  {
+    title: "Grid Layout",
+    link: "/grid-layout",
+    icon: "school",
+  },
+  // {
+  //   title: "Image Uploader",
+  //   link: "/image-uploader",
+  //   icon: "school",
+  // },
+  {
+    title: "Carousel",
+    link: "/carousel",
     icon: "school",
   },
 ];
