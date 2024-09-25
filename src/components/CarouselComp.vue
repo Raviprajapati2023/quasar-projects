@@ -150,11 +150,11 @@ const isImageItem = (item) => {
 };
 
 onMounted(() => {
-  setTimeout(() => {
-    updateSlideWidth();
-    window.addEventListener("resize", updateSlideWidth);
-    nextTick(() => updateSlideWidth());
-  }, 700);
+  // setTimeout(() => {
+  updateSlideWidth();
+  window.addEventListener("resize", updateSlideWidth);
+  nextTick(() => updateSlideWidth());
+  // }, 700);
 });
 </script>
 <style scoped>
