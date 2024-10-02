@@ -92,6 +92,16 @@ const linksList = [
     link: "/carousel",
     icon: "school",
   },
+  {
+    title: "TypeCast",
+    link: "/type-cast",
+    icon: "school",
+  },
+  {
+    title: "Digital Clock",
+    link: "/digital-clock",
+    icon: "watch",
+  },
 ];
 
 export default defineComponent({

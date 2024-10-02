@@ -35,6 +35,14 @@ const routes = [
         path: "/grid-layout",
         component: () => import("pages/GridLayout.vue"),
       },
+      {
+        path: "/type-cast",
+        component: () => import("pages/TypeCast.vue"),
+      },
+      {
+        path: "/digital-clock",
+        component: () => import("pages/DigitalClock.vue"),
+      },
     ],
   },
 
