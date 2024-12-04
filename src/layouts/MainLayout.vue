@@ -82,6 +82,11 @@ const linksList = [
     link: "/grid-layout",
     icon: "school",
   },
+  {
+    title: "Konva Test",
+    link: "/conva-test",
+    icon: "school",
+  },
   // {
   //   title: "Image Uploader",
   //   link: "/image-uploader",

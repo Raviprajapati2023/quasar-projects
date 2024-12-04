@@ -12,7 +12,6 @@ import { ref, onMounted } from "vue";
 const currentTime = ref("");
 
 const updateClock = () => {
-  //   debugger;
   const now = new Date();
   let hrs = now.getHours();
   const minutes = now.getMinutes();

@@ -40,8 +40,8 @@ const routes = [
         component: () => import("pages/TypeCast.vue"),
       },
       {
-        path: "/digital-clock",
-        component: () => import("pages/DigitalClock.vue"),
+        path: "/conva-test",
+        component: () => import("pages/KonvaTest.vue"),
       },
     ],
   },
